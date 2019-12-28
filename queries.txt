@@ -1,0 +1,8 @@
+display all record who joined in february-81 and getting comm. more than 400
+
+ select * from emp1 where TO_CHAR(hiredate,'MON')='feb' and TO_CHAR(hiredate,'YY')='81' and comm>300;
+
+
+display total no. of people who are not getting comm.
+
+select count(emp) from emp1 where comm is null;
